@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<div class=" content container postlike">
+   <div class="post-heading row">
+      <div class="post-title col-md-8">
+         {{p.subject}}
+         <span class="post-username">by {{p.name}}</span>
+      </div>
+      <div class="post-date col-md-4">
+         {{p.created.strftime("%b %d, %Y")}}
+      </div>
+   </div>
+   <div class="row">
+      <div class="post-content col-md-12">
+         {{p._render_text | safe}}
+      </div>
+   </div>
+   <div class="row">
+      {% if user %}
+      <a class="post-comments" href="{{'/blog/comments/%s' % p.key.id()}}">comment </a>
+      {% endif %}
+      <div class="like_count">
+         {% if user and user.key.id() != p.author %}
+         <form method="post">
+            <button name="like" type="submit" value="{{p.key.id()}}">like
+            </button>
+         </form>
+         {% endif %}
+         {% if p.like_count != 0 %}
+         likes:{{p.like_count}}
+         {% endif %}
+      </div>
+      {% if user and p.author == user.key.id() %}
+      <div class="post-e-d">
+         <a class="post-edit" href="{{'/blog/editpost/%s' % p.key.id()}}">edit</a>
+         <span class="post-edit"> / </span>
+         <a class="post-delete" href="{{'/blog/deletepost/%s' % p.key.id()}}">delete</a>
+      </div>
+      {% endif %}
+   </div>
+</div>
+{% endblock %}

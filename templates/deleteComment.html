@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h2> Are you sure you want to delete <br> your comment, {{name}}?</h2>
+    <br>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12 comment">
+        {{comment | safe}}
+        </div>
+    </div>
+</div>
+
+    <form method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 comment">
+                    <button type="submit" name="delete" value="delete">  Delete</button>
+                    <button><a href="/blog"> Not really</a></button>
+                </div>
+            </div>
+        </div>
+    </form>
+            
+
+{% endblock %}

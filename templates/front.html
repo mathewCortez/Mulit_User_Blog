@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="content container posts">
+   {% for p in posts %}
+   <div class="row">
+      <div class="blog-post">
+         <form action="/blog/{{p.key.id()}}">
+            <button class="btn btn-default center-block post-button" type="submit">
+            {{ p.render(user) | safe }}
+            </button>
+         </form>
+      </div>
+      <br>
+   </div>
+   {% endfor %}
+</div>
+{% endblock %}

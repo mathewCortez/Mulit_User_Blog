@@ -1,0 +1,149 @@
+html {
+    background: rgb(209,217,223) !important;
+}
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #923168;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+html {
+    background: rgb(13,13,13) !important;
+    text-shadow:0 0 0 !important;
+    -webkit-filter: invert(100%) hue-rotate(180deg) brightness(110%) contrast(90%) grayscale(20%) sepia(10%) !important;
+}
+body {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 100%;
+    padding-top: 120px;
+    margin-bottom: 40px;
+}
+main {
+    padding-top: 20px;
+}
+p {
+    width: 100%;
+}
+.header_content {
+    text-align: center;
+}
+.navbar-default {
+    background-color: #E4B5D0;
+    
+    border: none;
+}
+label {
+    display: inline-block;
+    float: left;
+}
+.sign-log {
+    display: inline-block;
+    float: right;
+    clear: right;
+}
+h2 {
+    text-align: center;
+}
+.nav-item {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 48px;
+    min-height: 48px;
+    max-height: 49px;
+}
+
+a {
+    color: #923168; 
+}
+
+.signup_content,
+.login_content {
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+}
+.input-textbox-right {
+    display: inline-block;
+    text-align: left;
+    float: right;
+}
+
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.error {
+    color: red;
+}
+.signup-page-link,
+.login-page-link {
+    text-align: center;
+}
+
+.comment {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+textarea {
+    float: left;
+    width: 500px;
+    height: 400px;
+    font-size: 17px;
+    font-family: monospace;
+}
+
+
+.main-title {
+    display: block;
+    color: #222;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.post + .post {
+    margin-top: 15px;
+}
+.footer {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    bottom: 0;    
+    text-align: center;
+    height: 25px;
+    background-color: #E4B5D0;
+}
+.post-heading {
+    position: relative;
+    text-align: left;
+}
+.blog-post {
+    text-align: left
+}
+.post-button {
+    width: 100%;
+}
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.post-date {
+    text-align: right;
+    color: #999;
+}
+.post-content {
+    margin-top: 5px;
+}

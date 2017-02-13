@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Edit Post</h2>
+<form method="post">
+   <div class= "container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="col-md-12">
+               <label>Subject  </label>
+            </div>
+            <div class="col-md-12">
+               <input type="text" name="subject" value="{{subject}}">
+            </div>
+            <div class="col-md-12">
+               <label>Blog </label>
+            </div>
+            <div class="col-md-12">
+               <textarea name="content">{{content}}</textarea>
+            </div>
+            <div class="error">{{error}}</div>
+            <div class="col-md-12">
+               <input type="submit">
+               <button name="cancel" type="submit" value="cancel">
+               Cancel Edit
+               </button>
+            </div>
+            <br>
+         </div>
+      </div>
+   </div>
+</form>
+{% endblock %}

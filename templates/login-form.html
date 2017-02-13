@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Login</h2>
+<form method="post">
+   <div class="container login_content">
+      <div class="row">
+         <div class="col-md-12 error">
+            <p>{{error}}</p>
+         </div>
+         <div class="col-md-6">
+            <label class="sign-log">Enter Username: </label>
+            <label class="sign-log">Enter Password: </label>
+         </div>
+         <div class="col-md-6">
+            <input class="input-textbox-right" type="text" name="username" value="{{username}}">
+            <input class="input-textbox-right" type="password" name="password">
+         </div>
+      </div>
+      <br>
+      <div class="row">
+         <div class="col-md-12">
+            <button class="btn btn-default center-block" type="submit">Login</button>
+         </div>
+      </div>
+   </div>
+</form>
+<br><br>
+<div class="signup-page-link">
+   New here? <a href="/signup">signup</a>
+</div>
+{% endblock %}

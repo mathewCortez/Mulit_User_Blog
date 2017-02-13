@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Signup</h2>
+<form method="post">
+   <div class="container signup_content">
+      <div class="row">
+         <div class="col-md-12">
+            <p class="error-text">
+               {{error_username | safe}} {{error_password | safe}} {{error_verify | safe}} {{error_email | safe}}
+            </p>
+         </div>
+         <br>
+         <div class="col-md-6">
+            <label class="sign-log">Enter Username: </label>
+            <label class="sign-log">Enter Password: </label>
+            <label class="sign-log">Verify Password: </label>
+            <label class="sign-log">Enter Email: </label>
+         </div>
+         <div class="col-md-6">
+            <input class="input-textbox-right" type="text" name="username" value="{{username}}">
+            <input class="input-textbox-right" type="password" name="password">
+            <input class="input-textbox-right" type="password" name="verify">
+            <input class="input-textbox-right" type="text" name="email" value="{{email}}">
+         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-default center-block" type="submit">Submit</button>
+            </div>
+        </div>
+      </div>
+      <br>
+   </div>
+</form>
+<br>
+<div class="login-page-link">
+   Already a user? <a href="/login">login</a>
+</div>
+{% endblock %}

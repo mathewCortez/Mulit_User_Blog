@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link type="text/css" rel="stylesheet" href="/static/css/main.css" />
+      <title>CS 253 Blog</title>
+   </head>
+   <body>
+      <header class='navbar navbar-default navbar-fixed-top container header'>
+         <div class='header_content'>
+            <h1>Udacity Multi-user Blog</h1>
+         </div>
+         <nav>
+            <ul class='nav nav-pills nav_list'>
+               <li class='nav-item' role='presentation'>
+                  <a href="/blog">Home</a>
+               </li>
+               <li class='nav-item' role='presentation'>
+                  <a href="/blog/newpost">Newpost</a>
+               </li>
+               <li class='nav-item' role='presentation'>
+                  <a href="/signup">Sign-up</a>
+               </li>
+               {% if user %}
+               <li class='nav-item' role='presentation'>
+                  <a href="/logout">
+                  Logout
+                  </a>
+               </li>
+               {% else %}
+               <li class='nav-item' role='presentation'>
+                  <a href="/login">Login</a>
+               </li>
+               {% endif %}
+            </ul>
+         </nav>
+      </header>
+      <main>
+         {% block content %}
+         {% endblock %}
+      </main>
+      <footer class="container footer">
+         <div class="row">
+            <div class="col-md-12">
+               <p>
+                  Copyright &#169; Mathew Cortez 2017
+               </p>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+   </body>
+</html>
