@@ -1,9 +1,9 @@
-## Application Link: http://user-blog-156021.appspot.com/
+## Application Link: http://.appspot.com/
 
 ## You can also download the files from this git repository and run the files on google app engine - 
+https://github.com/mathewCortez/Mulit_User_Blog
 
-
-## Installation: 
+## Installing google app engine: 
 
 # Step 1: Install google app engine 
 # Step 2: After installation sign up for the account for help go to 
