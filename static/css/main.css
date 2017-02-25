@@ -44,7 +44,7 @@ label {
 }
 .sign-log {
     display: inline-block;
-    float: right;
+
 
 }
 h2 {
@@ -146,4 +146,17 @@ textarea {
 }
 .post-content {
     margin-top: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+    .input-textbox-right {
+        float: none;
+    
+    }
+    .nav-pills li a {
+        font-size: .8em;
+    }
+    h1 {
+        font-size: 26px;
+    }
 }
